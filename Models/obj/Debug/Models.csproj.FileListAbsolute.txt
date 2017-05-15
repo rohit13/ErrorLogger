@@ -1,0 +1,10 @@
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\bin\Debug\Models.exe.config
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\bin\Debug\Models.exe
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\bin\Debug\Models.pdb
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\bin\Debug\EntityFramework.dll
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\bin\Debug\EntityFramework.xml
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\obj\Debug\Models.exe
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\obj\Debug\Models.pdb
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

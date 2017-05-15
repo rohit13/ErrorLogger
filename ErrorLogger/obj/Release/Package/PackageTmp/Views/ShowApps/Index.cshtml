@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Models.Application>
+
+@{
+    ViewBag.Title = "Applications";
+}
+
+<h2>Applications</h2>
+@if (Context.User.Identity.IsAuthenticated && Context.User.IsInRole("Admin"))
+{
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AppName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AspNetUser.FirstName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            <!--@Html.DisplayFor(modelItem => item.AppName)-->
+            @Html.ActionLink(item.AppName, "GetApp", new { id = item.AppId })
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AspNetUser.FirstName)
+        </td>
+        <td>
+            @if (Context.User.Identity.IsAuthenticated && Context.User.IsInRole("Admin"))
+            {
+                @Html.ActionLink("Edit", "Edit", new { id = item.AppId })
+            }
+            @Html.ActionLink("Details", "Details", new { id=item.AppId }) |
+            @*@Html.ActionLink("Delete", "Delete", new { id=item.AppId })*@
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Models.Log>
+
+@{
+    ViewBag.Title = "Application Logs";
+}
+<h2>Application Logs</h2>
+
+@using (Html.BeginForm())
+{
+    <p></p>
+    <p>
+        Enter string to match in category
+    </p>
+    <p>
+        Search by Category: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+@*@Html.ActionLink("Create New", "Create")*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LogMessage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Timestamp)
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.LogCategory)*@
+            @Html.ActionLink("LogCategory", "GetLogs", new { id = @ViewBag.AppId, sortOrder = ViewBag.CategorySortParm })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Application.AppName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LogMessage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Timestamp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LogCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Application.AppName)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id=item.LogId }) |*@
+                @Html.ActionLink("Details", "Details", new { id = item.LogId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.LogId })
+            </td>
+        </tr>
+    }
+
+</table>
+<div style="text-align: center">
+    <canvas id="piecanvas"></canvas>
+</div>

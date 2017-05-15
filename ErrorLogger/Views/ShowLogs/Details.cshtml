@@ -1,0 +1,50 @@
+﻿@model Models.Log
+
+@{
+    ViewBag.Title = "Log Details";
+}
+
+<h2>Log Details</h2>
+
+<div>
+    <h4>Log</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LogMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogMessage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Timestamp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Timestamp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LogCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Application.AppName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Application.AppName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.LogId }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>

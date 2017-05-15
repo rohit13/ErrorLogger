@@ -1,0 +1,7 @@
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\LogLibrary\bin\Debug\LogLibrary.dll
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\LogLibrary\bin\Debug\LogLibrary.pdb
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\LogLibrary\bin\Debug\BlockingQueue.dll
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\LogLibrary\bin\Debug\BlockingQueue.pdb
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\LogLibrary\obj\Debug\LogLibrary.csprojResolveAssemblyReference.cache
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\LogLibrary\obj\Debug\LogLibrary.dll
+E:\Internet_Programming\FinalProject\ErrorLoggerFinal\LogLibrary\obj\Debug\LogLibrary.pdb
